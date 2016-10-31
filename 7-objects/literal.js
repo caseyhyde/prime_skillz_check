@@ -5,15 +5,27 @@
 // - zip
 // Assign the values based on Prime's
 // address.
-
+var prime = {
+  city: "Bloomington",
+  state: "Minnesota",
+  zip: "55431"
+};
 // 2 - Using dot notation, create a
 // new property for prime. This property
-// will be called address and will 
+// will be called address and will
 // take the value of Prime's street
 // address.
+
+prime.address = 9401;
 
 // 3 - Using dot notation, create a
 // new method for prime. This method
 // will console log out the complete
 // address of prime. Call the new
 // property/method print.
+
+prime.print = function() {
+  console.log(this.address + this.city + this.state + this.zip);
+};
+
+prime.print();
